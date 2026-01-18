@@ -1,0 +1,199 @@
+/* -------------------------------------------------------- */
+/* Global App Theme (Dark + Premium Glow) */
+/* -------------------------------------------------------- */
+.stApp {
+    background: #0a0a0f !important;
+    color: #e6e6e6 !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Main Background Fix */
+.main {
+    background: #0a0a0f !important;
+}
+
+/* -------------------------------------------------------- */
+/* HEADERS - Modern Gradient + Glow */
+/* -------------------------------------------------------- */
+h1 {
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    text-align: center;
+    background: linear-gradient(90deg, #ff4500, #ff8c42);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+    text-shadow: 0px 0px 20px rgba(255, 69, 0, 0.4);
+}
+
+h2, h3, h4 {
+    color: #ff8c42 !important;
+    font-weight: 700 !important;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    text-shadow: 0px 0px 12px rgba(255, 69, 0, 0.3);
+}
+
+/* -------------------------------------------------------- */
+/* SIDEBAR - Glass Look + Accent Border */
+/* -------------------------------------------------------- */
+section[data-testid="stSidebar"] {
+    background: rgba(20, 20, 30, 0.6) !important;
+    backdrop-filter: blur(14px) !important;
+    border-right: 2px solid rgba(255, 69, 0, 0.6);
+    padding-top: 10px;
+    box-shadow: 4px 0px 30px rgba(255,69,0,0.15);
+}
+
+section[data-testid="stSidebar"] * {
+    color: #e6e6e6 !important;
+    font-weight: 500;
+}
+
+/* Sidebar input labels */
+.stSidebar label {
+    font-size: 15px;
+    color: #ff8c42 !important;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* -------------------------------------------------------- */
+/* BUTTONS - Gradient + Smooth Hover Lift */
+/* -------------------------------------------------------- */
+.stButton > button {
+    background: linear-gradient(90deg, #ff4500, #ff6a1f) !important;
+    color: white !important;
+    border-radius: 14px !important;
+    padding: 12px 26px !important;
+    font-size: 17px;
+    font-weight: 800;
+    box-shadow: 0px 6px 18px rgba(255, 69, 0, 0.25);
+    letter-spacing: 0.3px;
+    transition: 0.25s ease-in-out;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 10px 30px rgba(255,69,0,0.45);
+}
+
+/* -------------------------------------------------------- */
+/* METRIC CARDS - More Premium + Centered Value */
+/* -------------------------------------------------------- */
+div[data-testid="stMetric"] {
+    background: rgba(30, 30, 45, 0.45);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 69, 0, 0.5);
+    border-radius: 20px;
+    padding: 18px 15px;
+    text-align: center;
+    box-shadow: 0px 8px 26px rgba(255,69,0,0.14);
+    transition: 0.3s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    border-color: rgba(255, 120, 60, 0.8);
+    box-shadow: 0px 8px 30px rgba(255,69,0,0.35);
+    transform: scale(1.03) translateY(-2px);
+}
+
+div[data-testid="stMetric"] .metric-value {
+    font-size: 28px !important;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    text-shadow: 0px 0px 12px rgba(255,69,0,0.2);
+}
+
+.metric-label {
+    font-size: 15px !important;
+    color: #ff8c42 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* -------------------------------------------------------- */
+/* CHART CARDS (Glass Morphism Wrapper) */
+/* -------------------------------------------------------- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    border-radius: 24px;
+    border: 1.5px solid rgba(255, 69, 0, 0.42);
+    padding: 22px;
+    margin-bottom: 26px;
+    box-shadow: 0 10px 40px rgba(255,69,0,0.11);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(12px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* -------------------------------------------------------- */
+/* DATA TABLE - Compact, Modern + Hover Glow */
+/* -------------------------------------------------------- */
+.stDataFrame {
+    border-radius: 16px;
+    border: 1.5px solid rgba(255, 69, 0, 0.6) !important;
+    box-shadow: 0px 4px 24px rgba(255,69,0,0.12);
+}
+
+table {
+    background: #111118 !important;
+    color: #ffffff !important;
+    font-size: 14.5px !important;
+}
+
+thead tr th {
+    background: #0a0a10 !important;
+    color: #ff6a1f !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    padding: 14px 12px;
+    border-bottom: 2px solid rgba(255,69,0,0.5);
+}
+
+tbody tr:hover td {
+    background: rgba(255, 69, 0, 0.12) !important;
+    box-shadow: 0px 2px 18px rgba(255,69,0,0.22);
+}
+
+/* -------------------------------------------------------- */
+/* EXPANDERS - Smooth + Gradient Border */
+/* -------------------------------------------------------- */
+.streamlit-expanderHeader {
+    background: linear-gradient(90deg, rgba(255,69,0,0.1), rgba(255,100,40,0.05));
+    color: #ff8c42 !important;
+    border-radius: 12px;
+    border-left: 3px solid #ff4500;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+.streamlit-expanderHeader:hover {
+    background: linear-gradient(90deg, rgba(255,69,0,0.2), rgba(255,100,40,0.08));
+}
+
+/* -------------------------------------------------------- */
+/* SCROLLBAR - Smooth Rounded Minimal */
+/* -------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141420;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff4500, #ff8c42);
+    border-radius: 10px;
+}
+
+/* Optional hide footer */
+footer {visibility: hidden;}
